@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html><head>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="toDoList.css">
+    <title>To-Do List</title>
+</head>
+<body>
+    <div id="header">
+        <img id="logo" src="EventMobiLogo.png" alt="Event Mobi">
+    </div>
+    <div id="content">
+        <div style="
+padding-top: 20px;
+padding-bottom: 20px;
+font-size: 2.8rem;
+font-weight:  300;
+/* text-align: left; */
+">Event Planner To-Do List</div>
+        <div class="todoItem">
+            <button type="button" id="option" class="btn btn-danger taskOption" style="
+color: #d91d2a;
+background-color: #f2f2f2;
+border: none;
+"><i class="icon icon--left fa fa-trash-o"></i> Delete</button>
+            <button type="button" id="option" class="btn btn-success taskOption"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+            <p class="name"> BugBear</p>
+            <p><b>Date:</b> January 30</p>
+            <p><b>Status:</b> To-Do</p>
+            <hr class="my-4">
+            <p><b>Description:</b> write code</p>
+            <span class="badge badge-info tag">Tag</span>
+        </div>
+        <div class="todoItem">
+            <button type="button" id="option" class="btn btn-danger taskOption"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+            <button type="button" id="option" class="btn btn-success taskOption"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+            <p class="name"><b>Name:</b> BugBear</p>
+            <p><b>Date:</b> January 30</p>
+            <p><b>Status:</b> To-Do</p>
+            <hr class="my-4">
+            <p><b>Description:</b> write code</p>
+            <span class="badge badge-info tag">Tag</span>
+        </div>
+        <div class="todoItem">
+            <button type="button" id="option" class="btn btn-danger taskOption"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+            <button type="button" id="option" class="btn btn-success taskOption"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+            <p class="name"><b>Name:</b> BugBear</p>
+            <p><b>Date:</b> January 30</p>
+            <p><b>Status:</b> To-Do</p>
+            <hr class="my-4">
+            <p><b>Description:</b> write code</p>
+            <span class="badge badge-info tag">Tag</span>
+        </div>
+        <div class="todoItem">
+            <button type="button" id="option" class="btn btn-danger taskOption"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+            <button type="button" id="option" class="btn btn-success taskOption"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+            <p class="name"><b>Name:</b> BugBear</p>
+            <p><b>Date:</b> January 30</p>
+            <p><b>Status:</b> To-Do</p>
+            <hr class="my-4">
+            <p><b>Description:</b> write code</p>
+            <span class="badge badge-info tag">Tag</span>
+        </div>
+        <div class="todoItem">
+            <button type="button" id="option" class="btn btn-danger taskOption"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+            <button type="button" id="option" class="btn btn-success taskOption"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+            <p class="name"><b>Name:</b> BugBear</p>
+            <p><b>Date:</b> January 30</p>
+            <p><b>Status:</b> To-Do</p>
+            <hr class="my-4">
+            <p><b>Description:</b> write code</p>
+            <span class="badge badge-info tag">Tag</span>
+        </div>
+    </div>
+    <div id="footer">
+        <button id="add" class="btn btn--primary" type="button" style="
+background-color: #6ebb83;
+border: none;
+margin: 0 5px 0 0;
+padding: 6px 16px;
+border-radius: 15px;
+"><i class="icon icon--left fa fa-plus"></i> Add Task</button>
+        
+        <div class="dropdown" id="dropdown">
+<span class="select2-selection select2-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-select-yzyd3-container"><span class="select2-selection__rendered" id="select2-select-yzyd3-container" title="-- Select a Country --">-- Select a Country --</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Default</a>
+                <a class="dropdown-item" href="#">Name</a>
+                <a class="dropdown-item" href="#">Date</a>
+                <a class="dropdown-item" href="#">Status</a>
+            </div>
+        </div>
+        <button type="button" class="btn btn--danger" id="deleteAll" style="
+color: #d91d2a;
+border: none;
+background-color: #f2f2f2;
+"><i class="icon icon--left fa fa-trash-o"></i>   Delete All</button>
+    </div>
+    <script src="toDoList.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body></html>
