@@ -1,37 +1,34 @@
 body{
-    padding-bottom:30px;
+    margin-bottom:30px;
     font-family: 'Open Sans', sans-serif;
     color: #575757;
     line-height:1;
 }
 #header{
-    text-align:left;
-    z-index:1;
     width:100%;
     top:0;
     position:fixed;
     background-color:rgb(74, 89, 100);
 }
 #logo{
-    width:300px;
-    height:80px;
+    height: 70px;
+    padding: 10px;
+    margin-left: 20px;
 }
 #content{
-    margin-top:90px;
+    margin-top:70px;
     text-align:center;
     padding-top:0;
     padding-bottom:20px;
     background-color: rgb(249, 249, 249);
 }
 #footer{
-    z-index:1;
     width:100%;
     bottom:0;
     position:fixed;
     background-color: rgb(255, 255, 255);
     border: 1px solid #e0e0e0;
     padding:10px;
-    padding-bottom:0;
 }
 .red{
     color:red;
@@ -40,16 +37,13 @@ body{
     float:left;
     border-radius:20px;
 }
-#sort{
-    float:left;
-    margin-left:25px;
-    font-size:22px;
-    color:white;
-}
+
 #dropdown{
     float:left;
     margin-left:10px;
+    margin-top: 8px;
 }
+
 #deleteAll{
     float:right;
     margin-right:15px;
