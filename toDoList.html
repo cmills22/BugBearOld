@@ -22,7 +22,7 @@
             /* text-align: left; */
             ">Event Planner To-Do List</div>
         <div class="todoItem">
-            <button type="button" id="option" class="btn btn-danger taskOption"><i class="fa fa-trash-o" data-toggle="modal" data-target="#deleteModal"></i></button>
+            <button type="button" id="option" class="btn btn-danger taskOption" data-toggle="modal" data-target="#deleteModal" onclick='output()'><i class="fa fa-trash-o"></i></button>
             <button type="button" id="option" class="btn btn-success taskOption"><i class="fa fa-pencil" ></i></button>
             <p class="name"><b>BugBear</b></p>
             <p><b>Due Date:</b> January 30</p>
@@ -32,7 +32,7 @@
             <span class="badge badge-info tag">Tag</span>
         </div>
         <div class="todoItem">
-            <button type="button" id="delete" class="btn btn-danger taskOption"><i class="fa fa-trash-o" aria-hidden="true" data-toggle="modal" data-target="#deleteModal"></i></button>
+            <button type="button" id="option" class="btn btn-danger taskOption" data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
             <button type="button" id="option" class="btn btn-success taskOption"><i class="fa fa-pencil" aria-hidden="true"></i></button>
             <p class="name"><b>BugBear</b></p>
             <p><b>Due Date:</b> January 30</p>
@@ -60,34 +60,37 @@
                 <a class="dropdown-item" href="#">Status</a>
             </div>
         </div>
-        <button type="button" class="btn btn--danger" id="deleteAll" data-toggle="modal" data-target="#deleteAllModal" style="
+        <button type="button" class="btn btn--danger" id="deleteAll" data-toggle="modal" data-target="#deleteAllModal" onclick='outputAll()' style="
             color: #d91d2a;
             border: none;
             background-color: #f2f2f2;
             "><i class="icon icon--left fa fa-trash-o"></i>   Delete All</button>
        
     </div>
-    <script src="toDoList.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
+    <script>
+        function output(){
+            console.log("single button");
+        }
+        function outputAll(){
+            console.log("All button");
+        }
+    </script>
     <!-- DeleteAll Modal -->
     <div class="modal fade" id="deleteAllModal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-            <h5 class="modal-title" id="deleteAllModalLabel">Warning</h5>
-            <button type="button" class="close" data-dismiss="modal">
-                <span aria-hidden="true">&times;</span>
-            </button>
+            <h5 class="modal-title" id="deleteAllModalLabel">Delete All Tasks?</h5>
             </div>
             <div class="modal-body">
             Are you sure you want to permanently delete all tasks?
             </div>
             <div class="modal-footer">
-            <button type="button" class="btn btn-secondary">Yes</button>
-            <button type="button" class="btn btn-primary" data-dismiss="modal">No</button>
+            <button type="button" class="btn btn-secondary">Delete All Tasks</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
             </div>
         </div>
         </div>
@@ -98,17 +101,14 @@
         <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-            <h5 class="modal-title" id="deleteModalLabel">Warning</h5>
-            <button type="button" class="close" data-dismiss="modal">
-                <span>&times;</span>
-            </button>
+            <h5 class="modal-title" id="deleteModalLabel">Delete Task?</h5>
             </div>
             <div class="modal-body">
             Are you sure you want to delete this task?
             </div>
             <div class="modal-footer">
-            <button type="button" class="btn btn-secondary">Yes</button>
-            <button type="button" class="btn btn-primary" data-dismiss="modal">No</button>
+            <button type="button" class="btn btn-secondary">Delete Task</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
             </div>
         </div>
         </div>
