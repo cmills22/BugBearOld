@@ -88,12 +88,12 @@ input[type='text'], input[type='email'], textarea{
     background-color: #f2f2f2;
     text-align: center;
     vertical-align: middle;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     text-decoration: none;
     border: none;
     border-radius: 15px;
     margin: 0 5px 0 0;
-    padding: 6px 16px;
+    padding: 4.5px 16px;
     cursor: pointer;
     -webkit-transition: background-color 0.2s;
     -moz-transition: background-color 0.2s;
@@ -201,16 +201,18 @@ table{
     position:fixed;
     background-color:rgb(74, 89, 100);
 }
-#logo{
-    width:300px;
-    height:80px;
+#logo {
+    margin-left: 20px;
+    padding: 10px;
+    height:70px;
 }
 #content{
-    margin-top:80px;
+    margin-top: 70px;
+    margin-bottom: 40px;
     text-align:center;
     padding-top:0;
-    padding-bottom:20px;
     background-color: rgb(242, 242, 242);
+    font-family: 'Open Sans', sans-serif;
 }
 #footer{
     z-index:1;
@@ -286,13 +288,6 @@ table{
     vertical-align: middle;
     text-decoration: none;
     cursor: pointer;
-    -webkit-transition: background-color 0.2s;
-    -moz-transition: background-color 0.2s;
-    -ms-transition: background-color 0.2s;
-    -o-transition: background-color 0.2s;
-    transition: background-color 0.2s;
-    -webkit-appearance: none;
-    -moz-appearance: none;
     color: white;
     background-color: #6ebb83;
     border: none;
@@ -300,6 +295,16 @@ table{
     padding: 4.5px 28px;
     border-radius: 15px;
     font-size: 0.8rem;
+    
+}
+
+.btnadd:active {
+    transform: translateY(1px);
+  }
+
+.btnadd:focus {
+    outline: #575757 1px dotted;
+    outline-offset: -1px;
 }
 
 .btndel {
@@ -308,13 +313,6 @@ table{
     vertical-align: middle;
     text-decoration: none;
     cursor: pointer;
-    -webkit-transition: background-color 0.2s;
-    -moz-transition: background-color 0.2s;
-    -ms-transition: background-color 0.2s;
-    -o-transition: background-color 0.2s;
-    transition: background-color 0.2s;
-    -webkit-appearance: none;
-    -moz-appearance: none;
     color: #d91d2a;
     border: none;
     margin: 2.2px 15px 0 0;
@@ -323,6 +321,15 @@ table{
     font-size: 0.8rem;
     background-color: rgb(242, 242, 242);
 }
+
+.btndel:focus {
+    outline: #575757 1px dotted;
+    outline-offset: -1px;
+}
+
+.btndel:active {
+    transform: translateY(1px);
+  }
 
 .btn1 {
     display: inline-block;
@@ -337,13 +344,16 @@ table{
     margin: 0 2.5px 0 2.5px;
     padding: 4.5px 20px;
     cursor: pointer;
-    -webkit-transition: background-color 0.2s;
-    -moz-transition: background-color 0.2s;
-    -ms-transition: background-color 0.2s;
-    -o-transition: background-color 0.2s;
-    transition: background-color 0.2s;
-    -webkit-appearance: none;
-    -moz-appearance: none;
+  
+}
+
+.btn1:active {
+    transform: translateY(1px);
+  }
+
+.btn1:focus {
+    outline: #575757 1px dotted;
+    outline-offset: -1px;
 }
 
 .btn2 {
@@ -359,15 +369,17 @@ table{
     margin: 0 2.5px 0 2.5px;
     padding: 4.5px 20px;
     cursor: pointer;
-    -webkit-transition: background-color 0.2s;
-    -moz-transition: background-color 0.2s;
-    -ms-transition: background-color 0.2s;
-    -o-transition: background-color 0.2s;
-    transition: background-color 0.2s;
-    -webkit-appearance: none;
-    -moz-appearance: none;
+  
 }
 
+.btn2:active {
+    transform: translateY(1px);
+  }
+  
+.btn2:focus {
+    outline: #575757 1px dotted;
+    outline-offset: -1px;
+}
 .btn .icon--left {
     margin-right: 7px;
 }
@@ -417,7 +429,6 @@ table{
     background-color: rgb(186, 186, 186);
     border-color: rgb(186, 186, 186);
 }
-
 .btn--danger {
     color: #d91d2a;
 }
