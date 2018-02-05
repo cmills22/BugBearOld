@@ -1,20 +1,20 @@
 body{
-    margin-bottom:30px;
     font-family: 'Open Sans', sans-serif;
     color: #575757;
     font-weight: 100;
     font-size: 0.9rem;
 }
 #header{
+    text-align:left;
+    z-index:1;
     width:100%;
     top:0;
     position:fixed;
     background-color:rgb(74, 89, 100);
 }
 #logo{
-    height: 70px;
-    padding: 10px;
-    margin-left: 20px;
+    width:300px;
+    height:80px;
 }
 #content{
     margin-top:80px;
@@ -24,12 +24,14 @@ body{
     background-color: rgb(242, 242, 242);
 }
 #footer{
+    z-index:1;
     width:100%;
     bottom:0;
     position:fixed;
     background-color: rgb(255, 255, 255);
     border: 1px solid #e0e0e0;
-    padding:5px 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 .red{
     color:red;
@@ -47,14 +49,12 @@ body{
 #dropdown{
     float:left;
     margin-left:10px;
-    margin-top:8px;
     font-family: 'Open Sans', sans-serif;
     background-color: white;
     color: #575757;
     font-weight: 100;
     font-size: 0.9rem;
 }
-
 #deleteAll{
     float:right;
     margin-right:15px;
@@ -91,7 +91,7 @@ body{
     border-radius:20px;
 }
 
-.btnadd{
+.btnadd {
     display: inline-block;
     text-align: center;
     vertical-align: middle;
@@ -112,7 +112,30 @@ body{
     border-radius: 15px;
     font-size: 0.8rem;
 }
-.btn1{
+
+.btndel {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-transition: background-color 0.2s;
+    -moz-transition: background-color 0.2s;
+    -ms-transition: background-color 0.2s;
+    -o-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    color: #d91d2a;
+    border: none;
+    margin: 2.2px 15px 0 0;
+    padding: 4.5px 28px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    background-color: rgb(242, 242, 242);
+}
+
+.btn1 {
     display: inline-block;
     color: #fff;
     background-color:#6ebb83;
@@ -123,7 +146,7 @@ body{
     border: none;
     border-radius: 15px;
     margin: 0 2.5px 0 2.5px;
-    padding: 4.5px 15px;
+    padding: 4.5px 20px;
     cursor: pointer;
     -webkit-transition: background-color 0.2s;
     -moz-transition: background-color 0.2s;
@@ -132,23 +155,9 @@ body{
     transition: background-color 0.2s;
     -webkit-appearance: none;
     -moz-appearance: none;
-.btn-primary:focus {
-    box-shadow: none;
 }
 
-.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
-    box-shadow: none;
-}
-
-.btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show>.btn-secondary.dropdown-toggle:focus {
-    box-shadow: none;
-}
-
-.btn-secondary:focus {
-    box-shadow: none;
-}
-
-.btn2{
+.btn2 {
     display: inline-block;
     color: #d91d2a;
     background-color: rgb(242, 242, 242);
@@ -159,7 +168,7 @@ body{
     border: none;
     border-radius: 15px;
     margin: 0 2.5px 0 2.5px;
-    padding: 4.5px 15px;
+    padding: 4.5px 20px;
     cursor: pointer;
     -webkit-transition: background-color 0.2s;
     -moz-transition: background-color 0.2s;
@@ -168,38 +177,6 @@ body{
     transition: background-color 0.2s;
     -webkit-appearance: none;
     -moz-appearance: none;
-}
-
-.btn-secondary {
-    color: #d91d2a;
-}
-
-.btn-primary:hover{
-    color: #575757;
-    background-color: rgb(186, 186, 186);
-}
-
-.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
-    color: #575757;
-    background-color: rgb(186, 186, 186);
-    border-color: rgb(186, 186, 186);
-}
-
-.btn-secondary:hover{
-    color: #ac1721;
-    background-color: rgb(186, 186, 186);
-}
-
-.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
-    color: #ac1721;
-    background-color: rgb(186, 186, 186);
-    border-color: rgb(186, 186, 186);
-}
-
-.btn--danger {
-    color: rgb(180, 21, 21);
-    background-color: #a19596;
-
 }
 
 .btn .icon--left {
