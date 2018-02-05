@@ -91,7 +91,7 @@ body{
     border-radius:20px;
 }
 
-.btnadd{
+.btnadd {
     display: inline-block;
     text-align: center;
     vertical-align: middle;
@@ -113,7 +113,29 @@ body{
     font-size: 0.8rem;
 }
 
-.btn1{
+.btndel {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-transition: background-color 0.2s;
+    -moz-transition: background-color 0.2s;
+    -ms-transition: background-color 0.2s;
+    -o-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    color: #d91d2a;
+    border: none;
+    margin: 2.2px 15px 0 0;
+    padding: 4.5px 28px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    background-color: rgb(242, 242, 242);
+}
+
+.btn1 {
     display: inline-block;
     color: #fff;
     background-color:#6ebb83;
@@ -124,7 +146,7 @@ body{
     border: none;
     border-radius: 15px;
     margin: 0 2.5px 0 2.5px;
-    padding: 4.5px 15px;
+    padding: 4.5px 20px;
     cursor: pointer;
     -webkit-transition: background-color 0.2s;
     -moz-transition: background-color 0.2s;
@@ -135,7 +157,7 @@ body{
     -moz-appearance: none;
 }
 
-.btn2{
+.btn2 {
     display: inline-block;
     color: #d91d2a;
     background-color: rgb(242, 242, 242);
@@ -146,7 +168,7 @@ body{
     border: none;
     border-radius: 15px;
     margin: 0 2.5px 0 2.5px;
-    padding: 4.5px 15px;
+    padding: 4.5px 20px;
     cursor: pointer;
     -webkit-transition: background-color 0.2s;
     -moz-transition: background-color 0.2s;
@@ -155,12 +177,6 @@ body{
     transition: background-color 0.2s;
     -webkit-appearance: none;
     -moz-appearance: none;
-}
-
-.btn--danger {
-    color: rgb(180, 21, 21);
-    background-color: #a19596;
-    
 }
 
 .btn .icon--left {
