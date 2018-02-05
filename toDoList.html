@@ -3,7 +3,7 @@
 <head>
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="toDoList.css">
     <title>To-Do List</title>
@@ -31,21 +31,30 @@
             <p>write code</p>
             <span class="badge badge-info tag">Tag</span>
         </div>
-  
-        <div class="todoItem">
-            <button type="button" id="option" class="btn2 btn-danger taskOption" data-toggle='modal' data-target='#deleteModal'><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button>
+      <div class="todoItem">
+            <button type="button" id="option" class="btn2 btn-danger taskOption" data-toggle='modal' data-target='#deleteModal' onclick='output()'><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button>
             <button type="button" id="option" class="btn1 btn-success taskOption"><i class="fa fa-pencil" aria-hidden="true"></i></button>
             <p class="name"> BugBear</p>
             <p>Due Date: January 30</p>
             <p>Status: To-Do</p>
             <hr class="my-4">
-            <p> write code</p>
+            <p>write code</p>
+            <span class="badge badge-info tag">Tag</span>
+        </div>
+      <div class="todoItem">
+            <button type="button" id="option" class="btn2 btn-danger taskOption" data-toggle='modal' data-target='#deleteModal' onclick='output()'><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button>
+            <button type="button" id="option" class="btn1 btn-success taskOption"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+            <p class="name"> BugBear</p>
+            <p>Due Date: January 30</p>
+            <p>Status: To-Do</p>
+            <hr class="my-4">
+            <p>write code</p>
             <span class="badge badge-info tag">Tag</span>
         </div>
     </div>
     <div id="footer">
-        <button id="add" class="btnadd btn-success" type="button" style="
-            "><i class="icon icon--left fa fa-plus"></i> Add Task</button>
+        <button id="add" class="btnadd btn-success" type="button">
+            <i class="icon icon--left fa fa-plus"></i> Add Task</button>
         
         <div class="dropdown" id="dropdown">
             <select style=" background-color: white; color: #575757; font-weight: 100; font-size: 0.9rem; font-family:'Open Sans', sans-serif; margin-top: 4.5px;" id="sort">
@@ -55,7 +64,6 @@
                 <option value="Alphabetical">Alphabetical</option>
             </select>
         </div>
-
         <button type="button" id="deleteAll" data-toggle='modal' data-target='#deleteAllModal' onclick='outputAll()' style="
             color: #d91d2a;
             border: none;
