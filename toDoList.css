@@ -1,0 +1,207 @@
+body{
+    margin-bottom:30px;
+    font-family: 'Open Sans', sans-serif;
+    color: #575757;
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+#header{
+    width:100%;
+    top:0;
+    position:fixed;
+    background-color:rgb(74, 89, 100);
+}
+#logo{
+    height: 70px;
+    padding: 10px;
+    margin-left: 20px;
+}
+#content{
+    margin-top:80px;
+    text-align:center;
+    padding-top:0;
+    padding-bottom:20px;
+    background-color: rgb(242, 242, 242);
+}
+#footer{
+    width:100%;
+    bottom:0;
+    position:fixed;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #e0e0e0;
+    padding:5px 10px;
+}
+.red{
+    color:red;
+}
+#add{
+    float:left;
+    border-radius:20px;
+}
+#sort{
+    float:left;
+    margin-left:5px;
+    font-size:22px;
+    color:white;
+}
+#dropdown{
+    float:left;
+    margin-left:10px;
+    margin-top:8px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    color: #575757;
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+#deleteAll{
+    float:right;
+    margin-right:15px;
+    border-radius:20px;
+}
+.tag{
+    float:right;
+}
+
+.todoItem{
+    /* border: 1px solid black; */
+    background-color: white;
+    width: 50%;
+    display:inline-block;
+    text-align:left;
+    /* padding:10px; */
+    margin-bottom:25px;
+    border-radius: 0;
+    padding: 35px 25px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+}
+
+.taskOption{
+    float:right;
+    margin-right:5px;
+}
+.name{
+    font-size:20px;
+}
+#dropdownMenuButton{
+    border-radius:20px;
+}
+#option{
+    border-radius:20px;
+}
+
+.btnadd{
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-transition: background-color 0.2s;
+    -moz-transition: background-color 0.2s;
+    -ms-transition: background-color 0.2s;
+    -o-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    color: white;
+    background-color: #6ebb83;
+    border: none;
+    margin: 2.2px 0 0 15px;
+    padding: 4.5px 28px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+}
+.btn1{
+    display: inline-block;
+    color: #fff;
+    background-color:#6ebb83;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 0.8rem;
+    text-decoration: none;
+    border: none;
+    border-radius: 15px;
+    margin: 0 2.5px 0 2.5px;
+    padding: 4.5px 15px;
+    cursor: pointer;
+    -webkit-transition: background-color 0.2s;
+    -moz-transition: background-color 0.2s;
+    -ms-transition: background-color 0.2s;
+    -o-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+.btn-primary:focus {
+    box-shadow: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: none;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show>.btn-secondary.dropdown-toggle:focus {
+    box-shadow: none;
+}
+
+.btn-secondary:focus {
+    box-shadow: none;
+}
+
+.btn2{
+    display: inline-block;
+    color: #d91d2a;
+    background-color: rgb(242, 242, 242);
+    text-align: center;
+    vertical-align: middle;
+    font-size: 0.8rem;
+    text-decoration: none;
+    border: none;
+    border-radius: 15px;
+    margin: 0 2.5px 0 2.5px;
+    padding: 4.5px 15px;
+    cursor: pointer;
+    -webkit-transition: background-color 0.2s;
+    -moz-transition: background-color 0.2s;
+    -ms-transition: background-color 0.2s;
+    -o-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.btn-secondary {
+    color: #d91d2a;
+}
+
+.btn-primary:hover{
+    color: #575757;
+    background-color: rgb(186, 186, 186);
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: #575757;
+    background-color: rgb(186, 186, 186);
+    border-color: rgb(186, 186, 186);
+}
+
+.btn-secondary:hover{
+    color: #ac1721;
+    background-color: rgb(186, 186, 186);
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+    color: #ac1721;
+    background-color: rgb(186, 186, 186);
+    border-color: rgb(186, 186, 186);
+}
+
+.btn--danger {
+    color: rgb(180, 21, 21);
+    background-color: #a19596;
+
+}
+
+.btn .icon--left {
+    margin-right: 7px;
+}
