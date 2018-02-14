@@ -50,60 +50,6 @@
         </button>
     </div>
 
-    <!-- Form Popup -->
-    <div class='popupBackground' id='popupBackground'>
-        <div class='form-box'>
-            <p class='name'>Task Information</p>
-            <div class='form form--required form--has-character-limit'>
-                <label class='form-label' for='input-name'>Name</label>
-                <div class='text-help character-count'>100</div>
-                <input type='text' maxlength='100' class='form-input' id='input-name'>
-                <small class='text-help'>Maximum of 100 characters.</small>
-            </div>
-            <div class='form form--required'>
-                <label class='form-label' for='datepicker'>Expected Date of Completion</label>
-                <input type='text' class='form-input' id='datepicker'>
-                <small class='text-help'></small>
-            </div>
-            <div class='form form--required'>
-                <label class='form-label' for='status-dropdown'>Status</label>
-                <select class='form-input' id='status-dropdown'>
-                    <option value='To-Do'>To-Do</option>
-                    <option value='In Progress'>In Progress</option>
-                    <option value='Done'>Done</option>
-                </select>
-                <small class='text-help'></small>
-            </div>
-            <div class='form form--optional form--has-character-limit'>
-                <label class='form-label' for='input-tag'>Tag</label>
-                <div class='text-help character-count'>30</div>
-                <input type='text' maxlength='30' class='form-input' id='input-tag'>
-                <small class='text-help'>Tags help to group tasks together.</small>
-            </div>
-            <div class='form form--optional'>
-                <label class='form-label' for='input-tag-colour'>Colour of Tag</label>
-                <select class='form-input' id='input-tag-colour'>
-                    <option value='blue'>Blue</option>
-                    <option value='green'>Green</option>
-                    <option value='lgreen'>Light Green</option>
-                    <option value='orange'>Orange</option>
-                    <option value='lorange'>Light Orange</option>
-                </select>
-                <small class='text-help'>Will only have an effect if using a tag.</small>
-            </div>
-            <div class='form form--optional form--has-character-limit'>
-                <label class='form-label' for='input-description'>Description</label>
-                <div class='text-help character-count'>250</div>
-                <textarea wrap='soft' rows='4' maxlength='250' class='form-input' id='input-description'></textarea>
-                <small class='text-help'></small>
-            </div>
-            <div class='form-footer'>
-                <button type='button' class='btnadd btn-success' id='save'><i class='icon icon--left fa fa-plus'></i> Save Task</button>
-                <button type='button' id='hidePopup' class='btn btn-primary'>Cancel</button>
-            </div>
-        </div>
-    </div>
-
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
